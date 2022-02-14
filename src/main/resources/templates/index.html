@@ -1,0 +1,81 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Resultado da leitura do arquivo</title>
+</head>
+
+<body>
+<header>
+<nav class="navbar-expand-lg navbar navbar-dark bg-primary"></nav>
+</header>
+
+ </br>
+ 
+<!-- 
+a) Quantidade total de funcionários;
+b) Quantidade total de clientes;
+c) Quantidade total de vendas;
+-->
+<div class="container d-flex justify-content-center">
+	<div class="row">
+		<div class="card m-3" style="width: 18rem;">
+  			<div class="card-body">
+    			<h5 class="card-title"><span th:text="${totalFuncionarios}"></span></h5>
+    			<p class="card-text">FUNCIONÁRIOS</p>
+  			</div>
+		</div>
+		
+			<div class="card m-3" style="width: 18rem;">
+  			<div class="card-body">
+    			<h5 class="card-title"><span th:text="${totalClientes}"></span></h5>
+    			<p class="card-text">CLIENTES</p>
+  			</div>
+		</div>
+		
+			<div class="card m-3" style="width: 18rem;">
+  				<div class="card-body">
+	    			<h5 class="card-title"><span th:text="${totalVendas}"></span></h5>
+	    			<p class="card-text">VENDAS</p>
+  				</div>
+		</div>
+		
+	</div>
+</div>
+
+<br>
+
+<!-- 
+d) Total do valor de vendas;
+-->
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title display-4"><span th:text="${totalValorVendas}"></span></h5>
+    <p class="card-text"><mark><em><strong>EM VENDAS!</strong></em></mark></p>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">Mês</th>
+	      <th scope="col">Valor das vendas</th>
+	      <th scope="col">Funcionário destaque</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row"></th>
+	      <td></td>
+	      <td></td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+
+</body>
+</html>
