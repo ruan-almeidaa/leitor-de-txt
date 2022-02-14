@@ -28,7 +28,7 @@ public class LeitorTxtApplication {
 		
 		
 		//alterar aqui o caminho do arquivo que irá ser lido
-		String caminhoDoArquivo = "C:\\Users\\ASUS\\Documents\\workspace-spring-tool-suite-4-4.13.1.RELEASE\\leitorTXT\\arquivo\\dados.txt";
+		String caminhoDoArquivo = "https://raw.githubusercontent.com/ruan-almeidaa/leitor-de-txt/main/arquivo/dados.txt";
 
 		FileReader fr = null;
 		BufferedReader br = null;
